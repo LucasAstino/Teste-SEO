@@ -1,0 +1,45 @@
+.footer {
+    background-color: #ececec;
+    padding: 40px 10px;
+
+    &__phone {
+        font-size: 20px;
+        color: #525252;
+        font-weight: 600
+    }
+
+    &__wrapper {
+        margin: auto;
+        max-width: 856px;
+        font-size: 15px;
+        color: #525252;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
+    &__item {
+        text-decoration: none;
+
+        &:nth-child(1) {
+            font-size: 15px;
+            color: #525252;
+            font-weight: 400;
+        }
+        &:nth-child(2) {
+            font-size: 15px;
+            color: #525252;
+            font-weight: 600;
+        }
+        &:nth-child(3) {
+            font-size: 20px;
+            color: #525252;
+            font-weight: 600;
+        }
+    }
+}
